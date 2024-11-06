@@ -34,7 +34,7 @@ const SubmissionEnquiry = () => {
 
       setLoading(true);
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCLUVcxqn2V7wgMPd4Fti8rd-pzcq5z-ko`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_GEMINI_AI_API_KEY}`,
         {
           contents: [{ parts: [{ text: question }] }],
         }
