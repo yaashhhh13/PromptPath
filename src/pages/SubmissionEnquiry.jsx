@@ -66,7 +66,7 @@ const SubmissionEnquiry = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Your full name
                 </h1>
                 <input
@@ -77,7 +77,7 @@ const SubmissionEnquiry = () => {
                 />
               </div>
               <div className="relative p-4 w-full rounded-md">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   HR Name
                 </h1>
                 <input
@@ -89,7 +89,7 @@ const SubmissionEnquiry = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   your email
                 </h1>
                 <input
@@ -102,7 +102,7 @@ const SubmissionEnquiry = () => {
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full rounded-md">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   company name
                 </h1>
                 <input
@@ -114,7 +114,7 @@ const SubmissionEnquiry = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   sent on which date
                 </h1>
                 <input

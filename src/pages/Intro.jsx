@@ -73,7 +73,9 @@ const Intro = () => {
 
       setLoading(true);
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_GEMINI_AI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${
+          import.meta.env.VITE_GEMINI_AI_API_KEY
+        }`,
         {
           contents: [{ parts: [{ text: question }] }],
         }
@@ -104,7 +106,7 @@ const Intro = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full rounded-md">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Full Name
                 </h1>
                 <input
@@ -115,7 +117,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Current city{" "}
                   <span className="text-sm">
                     (also write state, eg- Bhopal,MP)
@@ -128,7 +130,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Hometown
                   <span className="text-sm">
                     (also write state, eg- Bhopal,MP)
@@ -145,7 +147,7 @@ const Intro = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   School Name
                 </h1>
                 <input
@@ -156,7 +158,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   College name
                 </h1>
                 <input
@@ -168,14 +170,14 @@ const Intro = () => {
               <div className="relative p-4 w-full">
                 <label
                   for="clgStatus"
-                  className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-md font-medium text-gray-900  "
                 >
                   Have you completed your degree
                 </label>
                 <select
                   id="clgStatus"
                   name="clgStatus"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400   dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
                   <option selected>choose option</option>
                   <option value="Yes, completed">Yes, completed</option>
@@ -187,7 +189,7 @@ const Intro = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Which degree you are pursuing
                 </h1>
                 <input
@@ -198,7 +200,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Branch or course specialization
                 </h1>
                 <input
@@ -208,7 +210,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   No of family members
                 </h1>
                 <input
@@ -222,7 +224,7 @@ const Intro = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Father's occupation
                 </h1>
                 <input
@@ -232,7 +234,7 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Mothers's occupation
                 </h1>
                 <input
@@ -242,8 +244,8 @@ const Intro = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
-                  Sibling details 
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
+                  Sibling details
                 </h1>
                 <input
                   name="siblingDetails"
@@ -252,13 +254,12 @@ const Intro = () => {
                   autoComplete="off"
                 />
               </div>
-              
             </div>
           </div>
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Achievments
                 </h1>
                 <textarea
@@ -270,7 +271,7 @@ const Intro = () => {
                 ></textarea>
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Skills
                 </h1>
                 <textarea
@@ -282,7 +283,7 @@ const Intro = () => {
                 ></textarea>
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Experience
                 </h1>
                 <textarea
@@ -298,7 +299,7 @@ const Intro = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Mention your best projects
                 </h1>
                 <textarea
@@ -310,7 +311,7 @@ const Intro = () => {
                 ></textarea>
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Extra Curricular Activities
                 </h1>
                 <textarea
@@ -322,7 +323,7 @@ const Intro = () => {
                 ></textarea>
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Other Details if you like to mention in the introduction
                 </h1>
                 <textarea
@@ -344,7 +345,9 @@ const Intro = () => {
             </button>
           </div>
         </form>
-        <div className={`w-full bg-blue-100 ${loading? "p-4" : "p-0"} rounded-xl`}>
+        <div
+          className={`w-full bg-blue-100 ${loading ? "p-4" : "p-0"} rounded-xl`}
+        >
           {loading ? <center>Getting response ....</center> : <p>{answer}</p>}
         </div>
       </div>

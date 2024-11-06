@@ -72,7 +72,7 @@ const JobsInternEnquiry = () => {
           <div className="w-full">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Your full name
                 </h1>
                 <input
@@ -82,7 +82,7 @@ const JobsInternEnquiry = () => {
                 />
               </div>
               <div className="relative p-4 w-full rounded-md">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   HR Name
                 </h1>
                 <input
@@ -93,7 +93,7 @@ const JobsInternEnquiry = () => {
                 />
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   Company name
                 </h1>
                 <input
@@ -105,7 +105,7 @@ const JobsInternEnquiry = () => {
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   For which role you want to apply
                 </h1>
                 <input
@@ -117,14 +117,14 @@ const JobsInternEnquiry = () => {
               <div className="relative p-4 w-full">
                 <label
                   for="enquiry"
-                  className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-md font-medium text-gray-900  "
                 >
                   you want to enquire about
                 </label>
                 <select
                   id="enquiry"
                   name="enquireAbout"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400   dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
                   <option selected>choose option</option>
                   <option value="Internship">Internship</option>
@@ -132,7 +132,7 @@ const JobsInternEnquiry = () => {
                 </select>
               </div>
               <div className="relative p-4 w-full">
-                <h1 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+                <h1 className="block mb-2 text-md font-medium text-gray-900  ">
                   which year you are in ?
                 </h1>
                 <input

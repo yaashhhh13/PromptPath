@@ -4,7 +4,7 @@ import { useState } from "react";
 const ResumeEnquiry = () => {
   const [question, setQuestion] = useState("");
   const [answers, setAnswers] = useState({});
-  const [loading, setLoading] = useState({}); // Use an object for section-specific loading states
+  const [loading, setLoading] = useState({});   
   const [error, setError] = useState("");
 
   const sections = [
@@ -72,7 +72,7 @@ const ResumeEnquiry = () => {
         {sections.map((section) => (
           <div key={section.name} className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
             <form onSubmit={(e) => formQuestion(e, section)}>
-              <h3 className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
+              <h3 className="block mb-2 text-md font-medium text-gray-900  ">
                 {section.label}
               </h3>
               <textarea
